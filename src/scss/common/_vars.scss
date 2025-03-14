@@ -1,4 +1,24 @@
-$_main_color: #242424;
-$_main_bg_color: rgba(255, 255, 255, 0.87);
-$_header_color: #747bff;
-$_header_accent_color: red;
+$_font_family: 'Inter', sans-serif;
+$_second_family: 'Tillana', sans-serif;
+$_light: #fff2f2;
+$_link: #dadbf9;
+$_stroke: #e6e6e6;
+$_privacy-policy: rgba(72, 122, 197, 0.2);
+$_cover: #487ac5;
+$_pop-up: rgba(72, 122, 197, 0.2);
+$_background_main: linear-gradient(
+    90deg,
+    #5754f6 0%,
+    rgba(35, 84, 180, 0.75) 53%,
+    rgba(36, 90, 172, 0.9) 100%
+  ),
+  rgba(0, 0, 0, 0.05);
+$_background_menu: rgba(72, 122, 197, 0.2),
+  linear-gradient(90deg, #1a2697 0%, rgba(74, 126, 204, 0.86) 100%),
+  rgba(0, 0, 0, 0.05);
+$_background_footer: linear-gradient(
+    90deg,
+    rgba(92, 157, 255, 0.85) 10.5%,
+    rgba(74, 126, 204, 0.9) 100%
+  ),
+  rgba(0, 0, 0, 0.2);
