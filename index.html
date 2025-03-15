@@ -43,21 +43,47 @@
     <title>Seaside Resort: Match 3</title>
     
     <script type="module" crossorigin src="/stp-8263/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8263/assets/styles-9a2dbca2.css">
+    <link rel="stylesheet" href="/stp-8263/assets/styles-5d961291.css">
   </head>
   <body>
     <header class="header">
+  <div class="logo">
+    <img class="logo-img" src="/stp-8263/favicon.svg" alt="Game Logo" />
+  </div>
+
+  <button class="menu-toggle" id="menu-toggle">
+    <img class="menu-icon" src="/stp-8263/menu.svg" alt="Menu" />
+  </button>
+
   <nav class="nav">
     <ul class="nav-list">
-      <li class="nav-item">
-        <a href="./page-2.html" class="nav-link">Page 2</a>
-      </li>
-
-      <li class="nav-item">
-        <a href="./page-3.html" class="nav-link">Page 3</a>
-      </li>
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About game</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Feature</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
     </ul>
   </nav>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <div class="mobile-header">
+      <div class="mobile-logo">
+        <img class="logo-img" src="/stp-8263/favicon.svg" alt="Game Logo" />
+      </div>
+      <button class="close-menu" id="close-menu">
+        <img class="close-icon" src="/stp-8263/close.svg" alt="Close menu" />
+      </button>
+    </div>
+    <ul class="mobile-nav-list">
+      <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">About game</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Feature</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">FAQ</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Reviews</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Gallery</a></li>
+    </ul>
+  </div>
 </header>
 
 
