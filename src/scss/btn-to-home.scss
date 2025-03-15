@@ -1,0 +1,31 @@
+.btn-to-home {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 16px 35px 16px;
+  @include media(desktop) {
+    justify-content: flex-start;
+    padding: 40px 48px 101px 48px;
+  }
+}
+.icon-arrow {
+  width: 25px;
+  height: 24px;
+  margin-right: 10px;
+  @include media(desktop) {
+    width: 36px;
+    height: 36px;
+  }
+}
+.btn-text {
+  font-family: $_font_family;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  color: $_light;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
