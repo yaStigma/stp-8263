@@ -46,7 +46,7 @@
     <title>Seaside Resort: Match 3</title>
     
     <script type="module" crossorigin src="/stp-8263/commonHelpers2.js"></script>
-    <link rel="stylesheet" href="/stp-8263/assets/styles-714d0280.css">
+    <link rel="stylesheet" href="/stp-8263/assets/styles-84fbb2fd.css">
   </head>
   <body>
     <header class="header">
@@ -55,7 +55,10 @@
   </div>
 
   <button class="menu-toggle" id="menu-toggle">
-    <img class="menu-icon" src="/stp-8263/menu.svg" alt="Menu" />
+    <!-- <img class="menu-icon" src="/menu.svg" alt="Menu" />     Замінила на свг елемент зі спрайту-->
+    <svg class="menu-icon">
+      <use xlink:href="sprite.svg#menu"></use>
+    </svg>
   </button>
 
   <nav class="nav">
@@ -75,7 +78,10 @@
         <img class="logo-img" src="/stp-8263/favicon.svg" alt="Game Logo" />
       </div>
       <button class="close-menu" id="close-menu">
-        <img class="close-icon" src="/stp-8263/close.svg" alt="Close menu" />
+        <!-- <img class="close-icon" src="/close.svg" alt="Close menu" />  Замінила на свг елемент зі спрайту-->
+        <svg class="close-icon">
+          <use xlink:href="sprite.svg#close"></use>
+        </svg>
       </button>
     </div>
     <ul class="mobile-nav-list">
@@ -200,7 +206,116 @@
   </div>
 </section>
 
-    <!-- Loads the specified .html file -->
+    <section class="faq-wrapper">
+  <h2 class="faq-title">FAQ</h2>
+  <div class="accordion">
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <p class="accordion-title">Is the game free to play?</p>
+        <img
+          src="/stp-8263/pictures/figure5 1x.png"
+          srcset="/pictures/figure5 1x.png 1x, /pictures/figure5 1x.png 2x"
+          alt="icon green"
+          class="faq-icon-green"
+        />
+      </div>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Yes, most levels can be played offline, but certain events and social
+          features require an internet connection
+        </p>
+        <img
+          src="/stp-8263/pictures/figure3 1x.png"
+          srcset="/pictures/figure3 1x.png 1x, /pictures/figure3 1x.png 2x"
+          alt="icon red"
+          class="faq-icon-red"
+        />
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <p class="accordion-title">Can I play offline?</p>
+        <img
+          src="/stp-8263/pictures/figure5 1x.png"
+          srcset="/pictures/figure5 1x.png 1x, /pictures/figure5 1x.png 2x"
+          alt="icon green"
+          class="faq-icon-green"
+        />
+      </div>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Yes! Seaside Resort: Match 3 is free to download and play, with
+          optional in-app purchases.
+        </p>
+        <img
+          src="/stp-8263/pictures/figure3 1x.png"
+          srcset="/pictures/figure3 1x.png 1x, /pictures/figure3 1x.png 2x"
+          alt="icon red"
+          class="faq-icon-red"
+        />
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <p class="accordion-title">How do I unlock new resort areas?</p>
+        <img
+          src="/stp-8263/pictures/figure5 1x.png"
+          srcset="/pictures/figure5 1x.png 1x, /pictures/figure5 1x.png 2x"
+          alt="icon green"
+          class="faq-icon-green"
+        />
+      </div>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Complete levels, earn stars, and use them to renovate and expand your
+          resort!
+        </p>
+        <img
+          src="/stp-8263/pictures/figure3 1x.png"
+          srcset="/pictures/figure3 1x.png 1x, /pictures/figure3 1x.png 2x"
+          alt="icon red"
+          class="faq-icon-red"
+        />
+      </div>
+    </div>
+    <div class="accordion-item">
+      <div class="accordion-header">
+        <p class="accordion-title">Are there real-world resort inspirations?</p>
+        <img
+          src="/stp-8263/pictures/figure5 1x.png"
+          srcset="/pictures/figure5 1x.png 1x, /pictures/figure5 1x.png 2x"
+          alt="icon green"
+          class="faq-icon-green"
+        />
+      </div>
+      <div class="accordion-content">
+        <p class="accordion-text">
+          Absolutely! The game's locations are inspired by real tropical resorts
+          and stunning coastal destinations.
+        </p>
+        <img
+          src="/stp-8263/pictures/figure3 1x.png"
+          srcset="/pictures/figure3 1x.png 1x, /pictures/figure3 1x.png 2x"
+          alt="icon red"
+          class="faq-icon-red"
+        />
+      </div>
+    </div>
+  </div>
+  <img
+    src="/stp-8263/pictures/figure2 1x.png"
+    srcset="/pictures/figure2 1x.png 1x, /pictures/figure2 1x.png 2x"
+    alt="bg icon"
+    class="faq-bgicon-small"
+  />
+  <img
+    src="/stp-8263/pictures/figure2 1x.png"
+    srcset="/pictures/figure2 1x.png 1x, /pictures/figure2 1x.png 2x"
+    alt="bg icon"
+    class="faq-bgicon-big"
+  />
+</section>
+
     <footer class="footer">
   <ul class="footer-list">
     <li class="footer-item">
@@ -225,6 +340,7 @@
 </footer>
 
 
+    
     
   </body>
 </html>
