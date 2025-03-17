@@ -1,0 +1,115 @@
+.faq-wrapper {
+  padding: 25px 14px;
+  @include media(desktop) {
+    padding: 80px 142px 70px 142px;
+    position: relative;
+  }
+}
+.faq-title {
+  font-family: $_second-family;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  color: $_light;
+  margin-bottom: 25px;
+  @include media(desktop) {
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+}
+.accordion-item {
+  border: 1px solid $_stroke;
+  box-shadow: $_box_shadow;
+  padding: 10px;
+  width: 292px;
+  min-height: 70px;
+  width: 100%;
+  min-width: 292px;
+  background: $_background_box;
+  cursor: pointer;
+
+  margin-bottom: 15px;
+  @include media(desktop) {
+    min-width: 916px;
+    min-height: 60px;
+    margin-bottom: 45px;
+  }
+}
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordion-title {
+  font-family: $_font_family;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: start;
+  color: $_light;
+  @include media(desktop) {
+    font-size: 24px;
+  }
+}
+.faq-icon-green {
+  width: 35px;
+  height: 35px;
+  margin-left: 20px;
+  @include media(desktop) {
+    width: 40px;
+    height: 40px;
+  }
+}
+.faq-icon-red {
+  width: 26px;
+  height: 28px;
+  margin-left: 6px;
+}
+.accordion-content {
+  display: none;
+}
+.accordion-text {
+  font-family: $_second_family;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 120%;
+  color: $_light;
+  @include media(desktop) {
+    font-size: 18px;
+  }
+}
+
+.accordion-item.active .accordion-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+.accordion-item.active .accordion-header {
+  display: none;
+}
+.faq-bgicon-small {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    bottom: 50px;
+    left: 69px;
+    transform: translate(-50%, -50%) rotate(90deg);
+    z-index: -1;
+  }
+}
+.faq-bgicon-big {
+  display: none;
+  @include media(desktop) {
+    display: block;
+    position: absolute;
+    width: 238px;
+    height: 159px;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%, -50%) rotate(-23deg);
+    z-index: -1;
+    opacity: 0.8;
+  }
+}

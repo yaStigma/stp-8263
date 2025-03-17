@@ -22,3 +22,9 @@ $_background_footer: linear-gradient(
     rgba(74, 126, 204, 0.9) 100%
   ),
   rgba(0, 0, 0, 0.2);
+$_background_box: linear-gradient(
+  90deg,
+  rgba(96, 145, 217, 0.5) 0%,
+  rgba(96, 145, 217, 0) 100%
+);
+$_box_shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
