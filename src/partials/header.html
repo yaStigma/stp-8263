@@ -4,7 +4,10 @@
   </div>
 
   <button class="menu-toggle" id="menu-toggle">
-    <img class="menu-icon" src="/menu.svg" alt="Menu" />
+    <!-- <img class="menu-icon" src="/menu.svg" alt="Menu" />     Замінила на свг елемент зі спрайту-->
+    <svg class="menu-icon">
+      <use xlink:href="sprite.svg#menu"></use>
+    </svg>
   </button>
 
   <nav class="nav">
@@ -24,7 +27,10 @@
         <img class="logo-img" src="/favicon.svg" alt="Game Logo" />
       </div>
       <button class="close-menu" id="close-menu">
-        <img class="close-icon" src="/close.svg" alt="Close menu" />
+        <!-- <img class="close-icon" src="/close.svg" alt="Close menu" />  Замінила на свг елемент зі спрайту-->
+        <svg class="close-icon">
+          <use xlink:href="sprite.svg#close"></use>
+        </svg>
       </button>
     </div>
     <ul class="mobile-nav-list">
