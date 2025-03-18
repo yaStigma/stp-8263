@@ -38,8 +38,14 @@ document.addEventListener('DOMContentLoaded', function () {
       const targetElement = document.querySelector(targetId);
 
       if (targetElement) {
+        const yOffset = -85;
+        const y =
+          targetElement.getBoundingClientRect().top +
+          window.pageYOffset +
+          yOffset;
+
         window.scrollTo({
-          top: targetElement.offsetTop - 85,
+          top: y,
           behavior: 'smooth',
         });
       }
@@ -74,8 +80,13 @@ document.addEventListener('DOMContentLoaded', function () {
   scrollToTopBtn.addEventListener('click', function () {
     window.scrollTo({
       top: 0,
+      left: 0,
       behavior: 'smooth',
     });
+
+    setTimeout(() => {
+      window.scrollTo(0, 1);
+    }, 300);
   });
 });
 
