@@ -153,10 +153,6 @@
   opacity: 1;
 }
 
-.scroll-to-top:hover {
-  background-color: rgba(58, 52, 210, 1);
-}
-
 //*Desktop//*
 
 @include media(desktop) {
@@ -211,5 +207,9 @@
 
   .nav .nav-link:hover {
     color: #b7c9ee;
+  }
+
+  .scroll-to-top {
+    display: none !important;
   }
 }
