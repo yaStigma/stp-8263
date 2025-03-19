@@ -16,16 +16,16 @@ document.addEventListener('DOMContentLoaded', () => {
   )
     return;
 
-  const updateHeroPadding = () => {
-    if (window.innerWidth < 1200) {
-      hero.style.paddingTop = `${header.offsetHeight}px`;
-    } else {
-      hero.style.removeProperty('padding-top');
-    }
-  };
+  // const updateHeroPadding = () => {
+  //   if (window.innerWidth < 1200) {
+  //     hero.style.paddingTop = `${header.offsetHeight}px`;
+  //   } else {
+  //     hero.style.removeProperty('padding-top');
+  //   }
+  // };
 
-  updateHeroPadding();
-  window.addEventListener('resize', updateHeroPadding);
+  // updateHeroPadding();
+  // window.addEventListener('resize', updateHeroPadding);
 
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', e => {

@@ -1,6 +1,6 @@
 .footer {
   background: $_background_footer;
-
+  width: 100%;
   min-width: 320px;
   height: 220px;
   @include media(desktop) {

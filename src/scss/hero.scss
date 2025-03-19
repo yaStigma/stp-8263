@@ -1,49 +1,40 @@
 .hero {
+  margin-top: 85px;
   position: relative;
   width: 100%;
-  height: 348px;
-  background: linear-gradient(
-      90deg,
-      #5754f7 0%,
-      rgba(35, 84, 180, 0.75) 53%,
-      rgba(36, 90, 172, 0.9) 100%
-    ),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.hero__container {
-  position: relative;
-  width: 288px;
-  height: 236px;
+  min-height: 348px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  z-index: 3;
-
-  @include media(desktop) {
-    position: static;
-    top: auto;
-    left: auto;
-    transform: none;
-  }
+  justify-content: flex-start;
+  padding: 40px 16px 42px 16px;
+  overflow: hidden;
 }
 
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('.././public/pictures/hero 2x.png');
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
 .hero__title {
   font-family: Tillana, sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 1.4;
   text-align: center;
-  width: 268px;
-  display: block;
-  word-wrap: break-word;
   padding: 10px;
+  position: relative;
+  margin-bottom: 33px;
+  z-index: 3;
 }
-
 .hero__button {
   display: flex;
   align-items: center;
@@ -62,6 +53,7 @@
   justify-content: center;
   backdrop-filter: blur(20px);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+  position: relative;
   z-index: 3;
   cursor: pointer;
 }
@@ -71,17 +63,11 @@
   height: 22px;
 }
 
-.hero__image {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: auto;
-  z-index: 1;
-}
-
-.hero__image img {
-  width: 100%;
-  height: auto;
+.hero__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
 //*Desktop//*
@@ -89,23 +75,14 @@
 @include media(desktop) {
   .hero {
     height: 806px;
-  }
-
-  .hero__container {
-    position: absolute;
-    left: 48px;
-    width: 633px;
-    height: 340px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    padding: 233px 519px 233px 48px;
   }
 
   .hero__title {
     font-size: 68px;
     width: 633px;
     line-height: 1.2;
+    margin-bottom: 64px;
   }
 
   .hero__button {
@@ -119,3 +96,126 @@
     height: 50px;
   }
 }
+
+// .hero {
+//   // position: relative;
+//   width: 320px;
+//   height: 348px;
+//   // background: linear-gradient(
+//   //     90deg,
+//   //     #5754f7 0%,
+//   //     rgba(35, 84, 180, 0.75) 53%,
+//   //     rgba(36, 90, 172, 0.9) 100%
+//   //   ),
+//   //   linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   background: url(.././public/pictures/hero\ 1x.png);
+// }
+
+// .hero__container {
+//   // position: relative;
+//   // width: 288px;
+//   // height: 236px;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: space-between;
+//   align-items: center;
+//   z-index: 3;
+
+//   @include media(desktop) {
+//     position: static;
+//     top: auto;
+//     left: auto;
+//     transform: none;
+//   }
+// }
+
+// .hero__title {
+//   font-family: Tillana, sans-serif;
+//   font-weight: 400;
+//   font-size: 36px;
+//   line-height: 1.4;
+//   text-align: center;
+//   width: 268px;
+//   display: block;
+//   word-wrap: break-word;
+//   padding: 10px;
+// }
+
+// .hero__button {
+//   display: flex;
+//   align-items: center;
+//   gap: 3px;
+//   background: #ffffff42;
+//   border: 1px solid black;
+//   padding: 5px 15px;
+//   font-size: 22px;
+//   font-family: 'Kite One', sans-serif;
+//   color: #202020;
+//   text-decoration: none;
+//   border-radius: 5px;
+//   transition: 0.3s;
+//   width: 160px;
+//   height: 57px;
+//   justify-content: center;
+//   backdrop-filter: blur(20px);
+//   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+//   z-index: 3;
+//   cursor: pointer;
+// }
+
+// .hero__button-icon {
+//   width: 22px;
+//   height: 22px;
+// }
+
+// .hero__image {
+//   // position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   height: auto;
+//   z-index: 1;
+// }
+
+// .hero__image img {
+//   width: 100%;
+//   height: auto;
+// }
+
+// //*Desktop//*
+
+// @include media(desktop) {
+//   .hero {
+//     height: 806px;
+//   }
+
+//   .hero__container {
+//     position: absolute;
+//     left: 48px;
+//     width: 633px;
+//     height: 340px;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-between;
+//   }
+
+//   .hero__title {
+//     font-size: 68px;
+//     width: 633px;
+//     line-height: 1.2;
+//   }
+
+//   .hero__button {
+//     font-size: 38px;
+//     width: 333px;
+//     height: 93px;
+//   }
+
+//   .hero__button-icon {
+//     width: 50px;
+//     height: 50px;
+//   }
+// }
