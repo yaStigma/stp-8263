@@ -8,6 +8,8 @@
 @import './faq.scss';
 @import './player-reviews.scss';
 @import './gallery.scss';
+@import './privacy-policy.scss';
+
 
 :root {
   font-family: $_font_family;
@@ -19,4 +21,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
 }

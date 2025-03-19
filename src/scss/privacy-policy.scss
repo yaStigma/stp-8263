@@ -1,0 +1,155 @@
+.main-wrapper-policy {
+  margin-bottom: 40px;
+}
+
+@include media(mobile) {
+  .palm-img {
+    display: none;
+  }
+}
+
+.section-privacy-policy {
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.privacy-title {
+  font-family: 'Tillana', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  width: 288px;
+  height: 36px;
+  line-height: 1;
+  color: #fff2f2;
+  margin-bottom: 15px;
+  padding: 4px 0;
+}
+
+.privacy-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  color: #fff2f2;
+}
+
+.privacy-subtitle {
+  font-family: 'Tillana', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+  color: #fff2f2;
+  padding: 4px 0;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.privacy-info .privacy-subtitle {
+  height: 79px;
+}
+
+.privacy-list {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.privacy-list li {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.privacy-info .privacy-text:nth-last-of-type(3),
+.privacy-info .privacy-text:nth-last-of-type(2),
+.privacy-info .privacy-text:last-of-type {
+  margin-top: 20px;
+}
+
+.privacy-third-party .privacy-text:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+.privacy-third-party .privacy-text:nth-of-type(3) {
+  margin-top: 20px;
+}
+
+.privacy-third-party .privacy-list li {
+  margin-bottom: 0;
+}
+
+.privacy-third-party .privacy-list-link {
+  color: #b7c9ee;
+}
+
+.privacy-changes .privacy-text:nth-of-type(2) {
+  margin-top: 20px;
+}
+
+//*Desktop//*
+@include media(desktop) {
+  .palm-img {
+    display: block;
+    width: 93px;
+    height: 122px;
+  }
+
+  .section-privacy-policy {
+    padding: 0 48px;
+    gap: 40px;
+  }
+
+  .privacy-title {
+    font-size: 48px;
+    font-weight: 400;
+    width: 1104px;
+    height: 100%;
+    line-height: 100%;
+    margin-bottom: 24px;
+    padding: 0;
+  }
+
+  .privacy-text {
+    font-size: 24px;
+  }
+
+  .privacy-subtitle {
+    font-size: 48px;
+    font-weight: 500;
+    padding: 0;
+  }
+
+  .privacy-subtitle br {
+    display: none;
+  }
+
+  .privacy-list {
+    padding-left: 30px;
+  }
+
+  .privacy-list li {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  .privacy-info .privacy-text:nth-last-of-type(3),
+  .privacy-info .privacy-text:nth-last-of-type(2),
+  .privacy-info .privacy-text:last-of-type {
+    margin-top: 30px;
+  }
+
+  .privacy-third-party .privacy-text:nth-of-type(2),
+  .privacy-third-party .privacy-text:nth-of-type(3) {
+    margin-top: 30px;
+  }
+
+  .privacy-third-party .privacy-list li {
+    margin-bottom: 5px;
+  }
+
+  .privacy-changes .privacy-text:nth-of-type(2) {
+    margin-top: 30px;
+  }
+}
