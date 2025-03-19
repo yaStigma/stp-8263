@@ -1,11 +1,11 @@
-.rewiews-section {
+.reviews-section {
   padding: 25px 16px;
 
   @include media(desktop) {
     padding: 80px 48px 80px 48px;
   }
 }
-.rewiews-title {
+.reviews-title {
   font-family: $_second-family;
   font-weight: 500;
   font-size: 36px;
@@ -17,7 +17,7 @@
     margin-bottom: 24px;
   }
 }
-.rewiews-wrapper {
+.reviews-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 15px;
@@ -26,7 +26,7 @@
     gap: 24px;
   }
 }
-.rewiews-box {
+.reviews-box {
   position: relative;
   border: 1px solid $_stroke;
   box-shadow: $_box_shadow;
@@ -40,7 +40,7 @@
     // margin-bottom: 45px;
   }
 }
-.rewiews-text-item {
+.reviews-text-item {
   font-family: $_font_family;
   font-weight: 400;
   font-size: 18px;
@@ -51,7 +51,7 @@
     font-size: 22px;
   }
 }
-.rewiews-text {
+.reviews-text {
   font-family: $_font_family;
   font-weight: 400;
   font-size: 18px;
@@ -68,12 +68,12 @@
   flex-direction: row;
 }
 
-.rewiews-star-icon {
+.reviews-star-icon {
   width: 24px;
   height: 22px;
   margin-right: 8px;
 }
-.rewiews-rocket-icon {
+.reviews-rocket-icon {
   width: 67px;
   height: 49px;
   position: absolute;
@@ -83,7 +83,7 @@
   transform: translate(-50%, -50%) rotate(117deg);
   z-index: -1;
 }
-.rewiews-ball-icon {
+.reviews-ball-icon {
   width: 53px;
   height: 55px;
   opacity: 0.8;
@@ -99,7 +99,7 @@
     right: -8%;
   }
 }
-.rewiews-bomb-icon {
+.reviews-bomb-icon {
   width: 53px;
   height: 53px;
   opacity: 0.8;
@@ -115,7 +115,7 @@
     right: -8%;
   }
 }
-.rewiews-green-icon {
+.reviews-green-icon {
   width: 55px;
   height: 55px;
   opacity: 0.8;
@@ -131,7 +131,7 @@
     right: -8%;
   }
 }
-.rewiews-firecracker-icon {
+.reviews-firecracker-icon {
   width: 54px;
   height: 58px;
   opacity: 0.8;
