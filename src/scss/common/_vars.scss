@@ -6,6 +6,7 @@ $_stroke: #e6e6e6;
 $_privacy-policy: rgba(72, 122, 197, 0.2);
 $_cover: #487ac5;
 $_pop-up: rgba(72, 122, 197, 0.2);
+$_background_btn: rgba(255, 255, 255, 0.26);
 $_background_main: linear-gradient(
     90deg,
     #5754f6 0%,
@@ -13,8 +14,11 @@ $_background_main: linear-gradient(
     rgba(36, 90, 172, 0.9) 100%
   ),
   rgba(0, 0, 0, 0.05);
-$_background_menu: rgba(72, 122, 197, 0.2),
-  linear-gradient(90deg, #1a2697 0%, rgba(74, 126, 204, 0.86) 100%),
+$_background_menu: linear-gradient(
+    90deg,
+    #1a2697 0%,
+    rgba(74, 126, 204, 0.86) 100%
+  ),
   rgba(0, 0, 0, 0.05);
 $_background_footer: linear-gradient(
     90deg,
@@ -28,3 +32,5 @@ $_background_box: linear-gradient(
   rgba(96, 145, 217, 0) 100%
 );
 $_box_shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.15);
+
+$_box_shadow_BG: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
