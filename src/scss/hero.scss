@@ -12,11 +12,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 16px 72px 16px;
 }
 
 .hero__container {
-  position: absolute;
+  position: relative;
   width: 288px;
   height: 236px;
   display: flex;
@@ -24,6 +23,13 @@
   justify-content: space-between;
   align-items: center;
   z-index: 3;
+
+  @include media(desktop) {
+    position: static;
+    top: auto;
+    left: auto;
+    transform: none;
+  }
 }
 
 .hero__title {
@@ -82,13 +88,11 @@
 
 @include media(desktop) {
   .hero {
-    height: 820px;
-    padding: 0 150px 0 150px;
+    height: 806px;
   }
 
   .hero__container {
     position: absolute;
-    top: 233px;
     left: 48px;
     width: 633px;
     height: 340px;
