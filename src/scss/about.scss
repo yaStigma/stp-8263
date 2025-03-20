@@ -1,19 +1,19 @@
 .about {
   width: 100%;
-  background: linear-gradient(
-      90deg,
-      #5754f7 0%,
-      rgba(35, 84, 180, 0.75) 53%,
-      rgba(36, 90, 172, 0.9) 100%
-    ),
-    linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+  // background: linear-gradient(
+  //     90deg,
+  //     #5754f7 0%,
+  //     rgba(35, 84, 180, 0.75) 53%,
+  //     rgba(36, 90, 172, 0.9) 100%
+  //   ),
+  //   linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
   padding: 40px 16px 57px 16px;
   display: flex;
   justify-content: center;
 }
 
 .about__container {
-  width: 288px;
+  min-width: 288px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -32,7 +32,6 @@
 }
 
 .about__text {
-  width: 288px;
   font-family: Inter, sans-serif;
   font-size: 18px;
   font-weight: 400;
@@ -56,7 +55,9 @@
   width: 100%;
   height: auto;
 }
-
+.about__phone {
+  display: none;
+}
 //*Desktop//*
 
 @include media(desktop) {

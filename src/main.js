@@ -16,6 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
   )
     return;
 
+  HEAD;
   const updateHeroPadding = () => {
     if (window.innerWidth < 1200) {
       hero.style.paddingTop = `${header.offsetHeight}px`;
@@ -26,6 +27,18 @@ document.addEventListener('DOMContentLoaded', () => {
 
   updateHeroPadding();
   window.addEventListener('resize', updateHeroPadding);
+
+  // const updateHeroPadding = () => {
+  //   if (window.innerWidth < 1200) {
+  //     hero.style.paddingTop = `${header.offsetHeight}px`;
+  //   } else {
+  //     hero.style.removeProperty('padding-top');
+  //   }
+  // };
+
+  // updateHeroPadding();
+  // window.addEventListener('resize', updateHeroPadding);
+  origin / main;
 
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', e => {
