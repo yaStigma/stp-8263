@@ -1,7 +1,8 @@
 .reviews-section {
   padding: 25px 16px;
-
+  width: 320px;
   @include media(desktop) {
+    width: 1200px;
     padding: 80px 48px 80px 48px;
   }
 }
@@ -34,10 +35,8 @@
   width: 288px;
   height: 222px;
   background: $_background_box;
-  //   margin-bottom: 15px;
   @include media(desktop) {
     width: 352px;
-    // margin-bottom: 45px;
   }
 }
 .reviews-text-item {

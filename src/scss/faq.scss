@@ -1,6 +1,8 @@
 .faq-wrapper {
   padding: 25px 14px;
+  width: 320px;
   @include media(desktop) {
+    width: 1200px;
     padding: 80px 142px 70px 142px;
     position: relative;
   }
