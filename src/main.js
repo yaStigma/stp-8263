@@ -16,18 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
   )
     return;
 
-  HEAD;
-  const updateHeroPadding = () => {
-    if (window.innerWidth < 1200) {
-      hero.style.paddingTop = `${header.offsetHeight}px`;
-    } else {
-      hero.style.removeProperty('padding-top');
-    }
-  };
-
-  updateHeroPadding();
-  window.addEventListener('resize', updateHeroPadding);
-
   // const updateHeroPadding = () => {
   //   if (window.innerWidth < 1200) {
   //     hero.style.paddingTop = `${header.offsetHeight}px`;
@@ -38,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // updateHeroPadding();
   // window.addEventListener('resize', updateHeroPadding);
-  origin / main;
 
   document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', e => {
@@ -86,5 +73,24 @@ document.addEventListener('DOMContentLoaded', () => {
 
   scrollToTopBtn.addEventListener('click', () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+});
+
+//*Зміна колоьру хедер при скролі//*
+
+document.addEventListener("DOMContentLoaded", () => {
+  const header = document.querySelector(".header");
+
+  if (!header) {
+    console.error("Header element not found!");
+    return;
+  }
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
   });
 });
