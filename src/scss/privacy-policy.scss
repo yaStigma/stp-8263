@@ -1,4 +1,5 @@
 .main-wrapper-policy {
+  width: 320px;
   margin-bottom: 40px;
 }
 
@@ -90,6 +91,9 @@
 
 //*Desktop//*
 @include media(desktop) {
+  .main-wrapper-policy {
+    width: 1200px;
+  }
   .palm-img {
     display: block;
     width: 93px;

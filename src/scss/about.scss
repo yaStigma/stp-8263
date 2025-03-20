@@ -1,12 +1,5 @@
 .about {
-  width: 100%;
-  // background: linear-gradient(
-  //     90deg,
-  //     #5754f7 0%,
-  //     rgba(35, 84, 180, 0.75) 53%,
-  //     rgba(36, 90, 172, 0.9) 100%
-  //   ),
-  //   linear-gradient(0deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05));
+  width: 320px;
   padding: 40px 16px 57px 16px;
   display: flex;
   justify-content: center;
@@ -62,6 +55,7 @@
 
 @include media(desktop) {
   .about {
+    width: 1200px;
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
