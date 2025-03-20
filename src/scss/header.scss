@@ -168,17 +168,18 @@
 
 @include media(desktop) {
   .header {
+    height: 74px;
+    position: fixed;
+    z-index: 1000;
+    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
+  }
+
+  .header .container {
+    min-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 13px 48px;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transition: background-color 0.3s ease-in-out, height 0.3s ease-in-out;
+    padding: 13 48px;
   }
 
   .logo {
@@ -187,18 +188,18 @@
   }
 
   .logo img {
-    width: 75px !important;
     height: 74px !important;
   }
 
   .nav-list {
     display: flex;
-    align-items: center;
-    gap: 48px;
+   justify-content: space-between;
+    width: 840px;
   }
 
   .nav-item {
     margin: 0;
+    padding: 10px;
   }
 
   .nav-link {
@@ -207,7 +208,6 @@
     color: #fff2f2;
     text-decoration: none;
     line-height: 100%;
-    padding: 10px;
     transition: color 0.3s ease-in-out;
     cursor: pointer;
   }
